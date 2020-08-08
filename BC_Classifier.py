@@ -2,11 +2,12 @@ import numpy as np
 import pandas as pd
 from sklearn import neighbors, preprocessing
 from sklearn.model_selection import train_test_split
+import pymongo
 
 def get_input(lst):
      return lst
 
-def classify(data):
+def classify(data, idnum):
     accuracies = []
     for i in range(100):
         dframe = pd.read_csv('bcdata.csv')
@@ -26,27 +27,43 @@ def classify(data):
     
     avg_acc = sum(accuracies)/len(accuracies)
     pred = clf.predict(get_input(data))
-    return avg_acc, pred
+    return avg_acc, pred, idnum
 
 def borm(num):
     return 'Benign Cancer' if num == 2 else 'Malignant Cancer'
 
-example_measures = [
-    [4,2,1,1,1,2,3,2,1],
-    [4,2,1,2,2,2,3,2,1],
-    [8,10,9,6,9,2,5,6,1]
-]
+def add_to_db(inputs):
+    my_client = pymongo.MongoClient('mongodb+srv://xdhacks:applebanana@cluster0.s06sf.mongodb.net/xdhacks?retryWrites=true&w=majority')
+    my_db = my_client['xdhacks']
+    my_db.insert_one(inputs)
 
-avg_acc, pred = classify(example_measures)
-print('Prediction:',pred)
-
-
+## This dict need to be added to the database
+p_id = {}
+inputs = {
+    "Clump Thickness" : None,
+    "Uniformity of Cell Size" : None,
+    "Uniformity of Cell Shape" : None,
+    "Marginal Adhesion" : None,
+    "Single Epithelial Cell Size" : None,
+    "Bare Nuclei" : None,
+    "Bland Chromatin" : None,
+    "Normal Nucleoli" : None,
+    "Mitoses" : None,
+}
 '''
 We need the input as a comma separated string of 9 integers from 1-10
 '''
 x = input('| Enter the parameters: ').split(',')
 y = [[int(i) for i in x]]
-avg_acc, pred = classify(y)
+
+for i in range(len(y)):
+    for item in inputs:
+        inputs[item] = y[i]
+
+avg_acc, pred, idnum = classify(y, 111111)
 
 print(f'| Prediction: {borm(pred.item())} \t|')
 print(f'| Accuracy of dataset: {avg_acc*100:.3f}% \t|')
+print(p_id)
+
+add_to_db(inputs)
