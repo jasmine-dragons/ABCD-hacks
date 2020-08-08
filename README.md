@@ -97,16 +97,7 @@ You will need to pip install pymongo[srv] to use the uri function.
 
    Note that the results summarized above in Past Usage refer to a dataset
    of size 369, while Group 1 has only 367 instances.  This is because it
-   originally contained 369 instances; 2 were removed.  The following
-   statements summarizes changes to the original Group 1's set of data:
-
-   #####  Group 1 : 367 points: 200B 167M (January 1989)
-   #####  Revised Jan 10, 1991: Replaced zero bare nuclei in 1080185 & 1187805
-   #####  Revised Nov 22,1991: Removed 765878,4,5,9,7,10,10,10,3,8,1 no record
-   #####                  : Removed 484201,2,7,8,8,4,3,10,3,4,1 zero epithelial
-   #####                  : Changed 0 to 1 in field 6 of sample 1219406
-   #####                  : Changed 0 to 1 in field 8 of following sample:
-   #####                  : 1182404,2,3,1,1,1,2,0,1,1,1
+   originally contained 369 instances; 2 were removed.
 
 5. Number of Instances: 699 (as of 15 July 1992)
 
