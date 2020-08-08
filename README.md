@@ -107,17 +107,17 @@ You will need to pip install pymongo[srv] to use the uri function.
 7. Attribute Information: (class attribute has been moved to last column)
 
      **Attributes**
-   1. Sample code number            id number
-   2. Clump Thickness               1 - 10
-   3. Uniformity of Cell Size       1 - 10
-   4. Uniformity of Cell Shape      1 - 10
-   5. Marginal Adhesion             1 - 10
-   6. Single Epithelial Cell Size   1 - 10
-   7. Bare Nuclei                   1 - 10
-   8. Bland Chromatin               1 - 10
-   9. Normal Nucleoli               1 - 10
-  10. Mitoses                       1 - 10
-  11. Class:                        (2 for benign, 4 for malignant)
+   01. Sample code number            id number
+   02. Clump Thickness               1 - 10
+   03. Uniformity of Cell Size       1 - 10
+   04. Uniformity of Cell Shape      1 - 10
+   05. Marginal Adhesion             1 - 10
+   06. Single Epithelial Cell Size   1 - 10
+   07. Bare Nuclei                   1 - 10
+   08. Bland Chromatin               1 - 10
+   09. Normal Nucleoli               1 - 10
+   10. Mitoses                       1 - 10
+   11. Class:                        (2 for benign, 4 for malignant)
 
 8. Missing attribute values: 16
 
