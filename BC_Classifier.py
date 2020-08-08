@@ -4,7 +4,7 @@ from sklearn import neighbors, preprocessing
 from sklearn.model_selection import train_test_split
 
 def get_input(lst):
-     return np.array(lst)
+     return lst
 
 def classify(data):
     accuracies = []
@@ -36,5 +36,15 @@ example_measures = [
 ]
 
 avg_acc, pred = classify(example_measures)
+print('Prediction:',pred)
+print('Accuracy:', avg_acc)
+
+
+'''
+We need the input as a comma separated string of 9 integers from 1-10
+'''
+x = input('Enter the parameters:').split(',')
+y = [[int(i) for i in x]]
+avg_acc, pred = classify(y)
 print('Prediction:',pred)
 print('Accuracy:', avg_acc)
