@@ -1,6 +1,6 @@
 # Breast Cancer Detector
 
-About 1 in 8 U.S. women (about 12%) will develop invasive breast cancer over the course of her lifetime. To ensure that everyone receives their deserved treatment, early detection is vital. Using machine learning, we have developed a program that detects whether a tumor is malignant or benign (given [these] symptoms or characterstics).
+About 1 in 8 U.S. women (about 12%) will develop invasive breast cancer over the course of her lifetime. To ensure that everyone receives their deserved treatment, early detection is vital. Using machine learning, we have developed a program that detects whether a tumor is malignant or benign (given [these] symptoms or characterstics). Both doctors and patients can use this application to improve their chances at detecting breast cancer.
 
 To view the dataset that we used, click [here](https://archive.ics.uci.edu/ml/datasets.php?format=&task=&att=&area=&numAtt=&numIns=&type=&sort=nameUp&view=table).
 
