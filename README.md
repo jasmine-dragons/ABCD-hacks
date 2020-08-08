@@ -1,9 +1,15 @@
-# Breast Cancer Detector for XdHacks Mini LA - Life Hacks
+# Breast Cancer Detector
 
-An application that classifies a set of symptoms and characteristics as either a benign breast cancer or a malignant breast cancer.
-We used the breast-cancer-wisconsin dataset found [here](https://archive.ics.uci.edu/ml/datasets.php?format=&task=&att=&area=&numAtt=&numIns=&type=&sort=nameUp&view=table).
+About 1 in 8 U.S. women (about 12%) will develop invasive breast cancer over the course of her lifetime. To ensure that everyone receives their deserved treatment, early detection is vital. Using machine learning, we have developed a program that detects whether a tumor is malignant or benign (given [these] symptoms or characterstics).
 
+To view the dataset that we used, click [here](https://archive.ics.uci.edu/ml/datasets.php?format=&task=&att=&area=&numAtt=&numIns=&type=&sort=nameUp&view=table).
+
+## Setup
 You will need to pip install pymongo[srv] to use the uri function.
+
+## How it works
+
+## Resources
 
 
 
