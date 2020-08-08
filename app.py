@@ -23,3 +23,4 @@ def getValues():
     NormalNucleoli = request.args.get('Normal Nucleoli')
     Mitoses = request.args.get('Mitoses')
     values = [ClumpThickness, UniformityofCellSize, UniformityofCellSize, MarginalAdhesion, SingleEpithelialCellSize, BareNuclei, BlandChromatin, NormalNucleoli, Mitoses]
+    return values
