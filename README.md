@@ -105,7 +105,7 @@ You will need to pip install pymongo[srv] to use the uri function.
 
 7. Attribute Information: (class attribute has been moved to last column)
 
-      ###Attributes
+     **Attributes**
    1. Sample code number            id number
    2. Clump Thickness               1 - 10
    3. Uniformity of Cell Size       1 - 10
