@@ -28,23 +28,27 @@ def classify(data):
     pred = clf.predict(get_input(data))
     return avg_acc, pred
 
+def borm(num):
+    return 'Benign' if num == 2 else 'Malignant'
+
 example_measures = [
     [4,2,1,1,1,2,3,2,1],
     [4,2,1,2,2,2,3,2,1],
     [4,2,1,2,2,2,3,2,1],
-    [4,2,1,2,2,2,3,2,1]
+    [4,2,1,2,2,2,3,2,1],
+    [8,11,9,6,9,2,5,6,1]
 ]
 
 avg_acc, pred = classify(example_measures)
 print('Prediction:',pred)
-print('Accuracy:', avg_acc)
 
 
 '''
 We need the input as a comma separated string of 9 integers from 1-10
 '''
-x = input('Enter the parameters:').split(',')
+x = input('| Enter the parameters: ').split(',')
 y = [[int(i) for i in x]]
 avg_acc, pred = classify(y)
-print('Prediction:',pred)
-print('Accuracy:', avg_acc)
+
+print(f'| Prediction: {pred.item()} => {borm(pred.item())} \t|')
+print(f'| Accuracy of dataset: {avg_acc:.4f} \t|')
