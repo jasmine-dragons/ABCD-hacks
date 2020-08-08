@@ -34,7 +34,7 @@ def borm(num):
 example_measures = [
     [4,2,1,1,1,2,3,2,1],
     [4,2,1,2,2,2,3,2,1],
-    [8,11,9,6,9,2,5,6,1]
+    [8,10,9,6,9,2,5,6,1]
 ]
 
 avg_acc, pred = classify(example_measures)
@@ -48,5 +48,5 @@ x = input('| Enter the parameters: ').split(',')
 y = [[int(i) for i in x]]
 avg_acc, pred = classify(y)
 
-print(f'| Prediction: {pred.item()} => {borm(pred.item())} \t|')
-print(f'| Accuracy of dataset: {avg_acc*100:.4f}% \t|')
+print(f'| Prediction: {borm(pred.item())} \t|')
+print(f'| Accuracy of dataset: {avg_acc*100:.3f}% \t|')
