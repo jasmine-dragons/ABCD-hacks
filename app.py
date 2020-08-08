@@ -76,8 +76,8 @@ def classify(data):
         acc = clf.score(X_test, y_test)
         accuracies.append(acc)
     
-        avg_acc = sum(accuracies)/len(accuracies)
-     pred = clf.predict(data)
+    avg_acc = sum(accuracies)/len(accuracies)
+    pred = clf.predict(data)
     return avg_acc, pred
 
 def borm(num):
