@@ -93,7 +93,6 @@ You will need to pip install pymongo[srv] to use the uri function.
      Group 6:  49 instances (Updated January 1991)
      Group 7:  31 instances (June 1991)
      Group 8:  86 instances (November 1991)
-     
      Total:   699 points (as of the donated datbase on 15 July 1992)
 
    Note that the results summarized above in Past Usage refer to a dataset
