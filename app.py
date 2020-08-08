@@ -24,6 +24,6 @@ def results():
     BlandChromatin = request.args.get('Bland Chromatin')
     NormalNucleoli = request.args.get('Normal Nucleoli')
     Mitoses = request.args.get('Mitoses')
-    values = [[ClumpThickness, UniformityofCellSize, UniformityofCellSize, MarginalAdhesion, SingleEpithelialCellSize, BareNuclei, BlandChromatin, NormalNucleoli, Mitoses]]
+    values = [ClumpThickness, UniformityofCellSize, UniformityofCellSize, MarginalAdhesion, SingleEpithelialCellSize, BareNuclei, BlandChromatin, NormalNucleoli, Mitoses]
     return render_template('results.html')
     
