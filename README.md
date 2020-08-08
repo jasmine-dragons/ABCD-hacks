@@ -2,7 +2,7 @@
 
 About 1 in 8 U.S. women (about 12%) will develop invasive breast cancer over the course of her lifetime. To ensure that everyone receives their deserved treatment, early detection is vital. Using machine learning, we have developed a program that detects whether a tumor is malignant or benign (given [these] symptoms or characterstics).
 
-To view the dataset that we used, click [here](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Original%29).
+To view the dataset that we used, click [here](https://archive.ics.uci.edu/ml/datasets.php?format=&task=&att=&area=&numAtt=&numIns=&type=&sort=nameUp&view=table).
 
 ## Setup
 You will need to pip install pymongo[srv] to use the uri function.
@@ -114,7 +114,7 @@ Citation Request:
 
 7. Attribute Information: (class attribute has been moved to last column)
 
-   #  Attribute                     Domain
+      Attribute                     Domain
    -- -----------------------------------------
    1. Sample code number            id number
    2. Clump Thickness               1 - 10
