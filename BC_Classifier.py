@@ -51,7 +51,7 @@ inputs = {}
 
 x = input('| Enter the parameters: ').split(',')
 y = [[int(i) for i in x]]
-print(y, y[0][1])
+
 for i in range(len(y)):
     for item in categories:
         inputs[item] = y[0][i]
