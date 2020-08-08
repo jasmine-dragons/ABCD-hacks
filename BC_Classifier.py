@@ -29,12 +29,10 @@ def classify(data):
     return avg_acc, pred
 
 def borm(num):
-    return 'Benign' if num == 2 else 'Malignant'
+    return 'Benign Cancer' if num == 2 else 'Malignant Cancer'
 
 example_measures = [
     [4,2,1,1,1,2,3,2,1],
-    [4,2,1,2,2,2,3,2,1],
-    [4,2,1,2,2,2,3,2,1],
     [4,2,1,2,2,2,3,2,1],
     [8,11,9,6,9,2,5,6,1]
 ]
@@ -51,4 +49,4 @@ y = [[int(i) for i in x]]
 avg_acc, pred = classify(y)
 
 print(f'| Prediction: {pred.item()} => {borm(pred.item())} \t|')
-print(f'| Accuracy of dataset: {avg_acc:.4f} \t|')
+print(f'| Accuracy of dataset: {avg_acc*100:.4f}% \t|')
