@@ -52,6 +52,7 @@ First, we would like to increase the size of our dataset. Bringing access to a g
 - Scikit-Learn
 - MongoDB / Pymongo
 - HTML/CSS
+- DNS
 
 ## [Youtube Video](https://www.youtube.com/watch?v=m9t6jYTXXc8)
 
