@@ -30,6 +30,9 @@ We also utilized a MongoDB database for doctors to look up and store their patie
 ![lookup](https://i.imgur.com/j0cPXAQ.png)
 ![lookupresults](https://i.imgur.com/DNhv5UE.png)
 
+## Future Improvements
+First, we would like to increase the size of our dataset. Bringing access to a greater number of hospitals would give us increased amounts of data will give us more accurate results and would let us be much more confident in the diagnosis. Next, we would also want to increase the number of features in the dataset, giving us more variables to look at and input into the system. This would help take into account many of the other factors involved in the chances of breast cancer in people. 
+
 ## Resources
 
    Citation Request:
