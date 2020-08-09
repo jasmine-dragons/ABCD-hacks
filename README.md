@@ -53,6 +53,7 @@ First, we would like to increase the size of our dataset. Bringing access to a g
 - MongoDB / Pymongo
 - HTML/CSS
 
+## [Youtube Video](https://www.youtube.com/watch?v=m9t6jYTXXc8)
 
 ## Resources
 
@@ -172,4 +173,8 @@ First, we would like to increase the size of our dataset. Bringing access to a g
  
    Benign: 458 (65.5%)
    Malignant: 241 (34.5%)
+   
+   
+   
+
 
