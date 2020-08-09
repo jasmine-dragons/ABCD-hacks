@@ -33,7 +33,16 @@ def getValues():
     BlandChromatin = request.args.get('Bland Chromatin')
     NormalNucleoli = request.args.get('Normal Nucleoli')
     Mitoses = request.args.get('Mitoses')
-    values = [ClumpThickness, UniformityofCellSize, UniformityofCellShape, MarginalAdhesion, SingleEpithelialCellSize,       BareNuclei, BlandChromatin, NormalNucleoli, Mitoses]
+    values = [
+        ClumpThickness, 
+        UniformityofCellSize, 
+        UniformityofCellShape, 
+        MarginalAdhesion, 
+        SingleEpithelialCellSize, 
+        BareNuclei, 
+        BlandChromatin, 
+        NormalNucleoli, 
+        Mitoses]
 
     def classify(data):
         accuracies = []
