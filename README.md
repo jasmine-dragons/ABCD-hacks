@@ -4,6 +4,7 @@ About 1 in 8 U.S. women (about 12%) will develop invasive breast cancer over the
 
 *Note: to view the dataset that we used, click [here](https://archive.ics.uci.edu/ml/datasets.php?format=&task=&att=&area=&numAtt=&numIns=&type=&sort=nameUp&view=table).*
 
+[![Watch the video](https://img.youtube.com/vi/m9t6jYTXXc8/maxresdefault.jpg)](https://youtu.be/m9t6jYTXXc8){:target="_blank"}
 <a href="https://youtu.be/m9t6jYTXXc8" target="_blank"><img src="https://img.youtube.com/vi/m9t6jYTXXc8/maxresdefault.jpg" /></a>
 
 ## Setup
