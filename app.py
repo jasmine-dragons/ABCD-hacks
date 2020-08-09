@@ -115,5 +115,17 @@ def lookupresults():
         patient = my_col.find_one({'_id': ObjectId(str(id))})
         return(patient)
 
+    patient = get_from_db(patientID)
+    iden = patient["_id"]
+    ct = patient["Clump Thickness"]
+    ucsi = patient["Uniformity of Cell Size"]
+    ucsh = patient["Uniformity of Cell Shape"]
+    ma = patient["Marginal Adhesion"]
+    secs = patient["Single Epithelial Cell Size"]
+    bn = patient["Bare Nuclei"]
+    bc = patient["Bland Chromatin"]
+    nn = patient["Normal Nucleoli"]
+    m = patient["Mitoses"]
 
-    return render_template("lookupresults.html", patient = get_from_db(patientID))
+
+    return render_template("lookupresults.html", iden = iden, ct = ct, ucsi = ucsi, ucsh = ucsh, ma = ma, secs = secs, bn = bn, bc = bc, nn = nn, m = m)
