@@ -1,3 +1,9 @@
 flask
 flask-heroku
 gunicorn
+pymongo
+dns
+pymongo[srv]
+numpy
+pandas
+scikit-learn
