@@ -1,6 +1,6 @@
+_______________ Click on the image to view the website ________________________
 <a href="https://abcd-xdhacks.herokuapp.com/"><img src="https://i.imgur.com/0MBSEU5.png?1" title="source: imgur.com" style="width=100px;" /></a>
 
-Click on the image to view the website
 
 
 # Breast Cancer Detector
