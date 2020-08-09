@@ -4,7 +4,7 @@ from sklearn import neighbors, preprocessing
 from sklearn.model_selection import train_test_split
 import pymongo
 import dns
-import app
+from app import getValues
 
 def classify(data):
     accuracies = []
@@ -65,6 +65,5 @@ inputs["Accuracy"] = avg_acc*100
 
 print(f'| Prediction: {borm(pred.item())} \t|')
 print(f'| Accuracy of dataset: {avg_acc*100:.3f}% \t|')
-print(getValues())
 
 add_to_db(inputs)
