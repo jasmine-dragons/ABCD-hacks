@@ -8,6 +8,9 @@ About 1 in 8 U.S. women (about 12%) will develop invasive breast cancer over the
 You will need to pip install pymongo[srv] to use the uri function.
 
 ## How it works
+Using machine learning, we have developed a program that detects whether a tumor is malignant or benign (given their symptoms or characteristics). To train our model, we used publicly available datasets for breast cancer patients. Using the machine learning algorithm, we implemented a web application where users can input 9 specific characteristics regarding the tumor. The algorithm then returns a breast cancer prediction and confidence value given the corresponding characteristics. 
+
+We also utilized a MongoDB database for doctors to look up and store their patients' information securely allowing them to make informed decisions about their healthcare. Because new user inputs and results are continuously added to this database, the pool of resources and references provided for both doctors and patients alike will grow as more individuals use this application.
 
 
 ## Resources
