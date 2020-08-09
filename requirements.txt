@@ -1,3 +1,5 @@
+flask
+flask-heroku
 django
 gunicorn
 django-heroku
