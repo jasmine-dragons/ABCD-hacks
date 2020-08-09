@@ -4,7 +4,7 @@ About 1 in 8 U.S. women (about 12%) will develop invasive breast cancer over the
 
 *Note: to view the dataset that we used, click [here](https://archive.ics.uci.edu/ml/datasets.php?format=&task=&att=&area=&numAtt=&numIns=&type=&sort=nameUp&view=table).*
 
-<a href="https://youtu.be/m9t6jYTXXc8" target="_blank"><img src="https://img.youtube.com/vi/m9t6jYTXXc8/maxresdefault.jpg"></a>
+<a href="https://youtu.be/m9t6jYTXXc8" target="_blank"><img src="https://img.youtube.com/vi/m9t6jYTXXc8/maxresdefault.jpg" /></a>
 
 ## Setup
 Your machine will need numpy, scikit-learn, pandas, flask, pymongo, pymongo[srv], dns, json, and bson to run this code. To get any of these libraries, you can just `pip install [insert library here]` in a terminal window. To run the code, first pull the github to your computer and then navigate to the folder where app.py is. Then open terminal and run the command `flask run`. This will direct you to a localhost website where you can interect with the product.
