@@ -19,6 +19,10 @@ Using machine learning, we have developed a program that detects whether a tumor
 We also utilized a MongoDB database for doctors to look up and store their patients' information securely allowing them to make informed decisions about their healthcare. Because new user inputs and results are continuously added to this database, the pool of resources and references provided for both doctors and patients alike will grow as more individuals use this application.
 
 ![homepage](https://i.imgur.com/5eugd9U.png)
+![detect](https://i.imgur.com/FtHelY0.png)
+![detectresults](https://i.imgur.com/WP4d7DI.png)
+![lookup](https://i.imgur.com/j0cPXAQ.png)
+![lookupresults](https://i.imgur.com/DNhv5UE.png)
 
 ## Resources
 
