@@ -1,12 +1,12 @@
+<a href="https://youtu.be/m9t6jYTXXc8"><img src="https://i.imgur.com/0MBSEU5.png?1" title="source: imgur.com" style="width=100px;" /></a>
+
 # Breast Cancer Detector
 
-About 1 in 8 U.S. women (about 12%) will develop invasive breast cancer over the course of her lifetime. To ensure that everyone receives their deserved treatment, early detection is vital. Using machine learning, we have developed a program that detects whether a tumor is malignant or benign (given [these] symptoms or characterstics). Both doctors and patients can use this application to improve their chances at detecting breast cancer.
+About 1 in 8 U.S. women (about 12%) will develop invasive breast cancer over the course of her lifetime. To ensure that everyone receives their deserved treatment, early detection is vital. Using machine learning, we have developed a program that detects whether a tumor is malignant or benign (given a certain set of characteristics). Both doctors and patients can use this application to improve their chances of detecting breast cancer.
 
 *Note: to view the dataset that we used, click [here](https://archive.ics.uci.edu/ml/datasets.php?format=&task=&att=&area=&numAtt=&numIns=&type=&sort=nameUp&view=table).*
 
 *Note: We used the Materialize.css file to style our pages. To obtain the css file, click [here](https://materializecss.com/).*
-
-<a href="https://youtu.be/m9t6jYTXXc8"><img src="https://i.imgur.com/0MBSEU5.png?1" title="source: imgur.com" style="width=100px;" /></a>
 
 ## Setup
 Your machine will need numpy, scikit-learn, pandas, flask, pymongo, pymongo[srv], dns, json, and bson to run this code. To get any of these libraries, you can just `pip install [insert library here]` in a terminal window. To run the code, first pull the github to your computer and then navigate to the folder where app.py is. Then open terminal and run the command `flask run`. This will direct you to a localhost website where you can interact with the product.
@@ -24,11 +24,35 @@ Using machine learning, we have developed a program that detects whether a tumor
 
 We also utilized a MongoDB database for doctors to look up and store their patients' information securely allowing them to make informed decisions about their healthcare. Because new user inputs and results are continuously added to this database, the pool of resources and references provided for both doctors and patients alike will grow as more individuals use this application.
 
-![homepage](https://i.imgur.com/5eugd9U.png)
-![detect](https://i.imgur.com/FtHelY0.png)
-![detectresults](https://i.imgur.com/WP4d7DI.png)
-![lookup](https://i.imgur.com/j0cPXAQ.png)
-![lookupresults](https://i.imgur.com/DNhv5UE.png)
+## The Site
+
+### Homepage:
+![homepage](https://i.imgur.com/o1ytDvz.png)
+
+### Detection:
+![detect](https://i.imgur.com/cQS2ZhK.png)
+
+### Results:
+![detectresults](https://i.imgur.com/OGy4ey9.png)
+
+### Patient Lookup:
+![lookup](https://i.imgur.com/3Uzo1eL.png)
+
+### Lookup Results:
+![lookupresults](https://i.imgur.com/TLUdUYh.png)
+
+## Future Improvements
+First, we would like to increase the size of our dataset. Bringing access to a greater number of hospitals would give us increased amounts of data will give us more accurate results and would let us be much more confident in the diagnosis. Next, we would also want to increase the number of features in the dataset, giving us more variables to look at and input into the system. This would help take into account many of the other factors involved in the chances of breast cancer in people. 
+
+## What We Used
+- Python
+- Flask
+- Numpy
+- Pandas
+- Scikit-Learn
+- MongoDB / Pymongo
+- HTML/CSS
+
 
 ## Resources
 
