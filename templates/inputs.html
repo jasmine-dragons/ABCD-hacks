@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="en" style="background-color: #dab7d1;">
+
 <head>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.css') }}" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <style>
     ::placeholder {
-        color: rgb(130 73 73);;
+        color: rgb(130 73 73);
+        ;
         font-size: 1.5em;
-}
+    }
 </style>
+
 <body>
     <header>
         <div class="container">
-            <h1 class="logo" style="margin-bottom: 40px;"> <img src="../static/ABCDlogoblackcomputer.png" style=" z-index: -1000; width: 300px; margin-bottom: -90px " /> A Breast Cancer Detector </h1>
+            <h1 class="logo" style="margin-bottom: 40px;"> <img src="../static/ABCDlogoblackcomputer.png"
+                    style=" z-index: -1000; width: 300px; margin-bottom: -90px " /> A Breast Cancer Detector </h1>
             <br style="padding-bottom:50px;">
-            <strong><nav>
-            <ul class="menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="/inputs">Detect</a></li>
-                <li><a href="/lookup">Look Up</a></li>
-            </ul>
-            </nav></strong>
+            <strong>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/inputs">Detect</a></li>
+                        <li><a href="/lookup">Look Up</a></li>
+                    </ul>
+                </nav>
+            </strong>
         </div>
     </header>
     <br><br>
     <div style="text-align:center;"></div>
-        <form action= "/results" style="margin: auto; padding-left: 20%; padding-right: 40px;">
-            <input style="width: 40%;" name="Clump Thickness" type="text" placeholder="Clump Thickness">
-            <input style="width: 40%;" name="Uniformity of Cell Size" type="text" placeholder="Uniformity of Cell Size">
-            <input style="width: 40%;" name="Uniformity of Cell Shape" type="text" placeholder="Uniformity of Cell Shape">
-            <input style="width: 40%;" name="Marginal Adhesion" type="text" placeholder="Marginal Adhesion">
-            <input style="width: 40%;" name="Single Epithelial Cell Size" type="text" placeholder="Single Epithelial Cell Size">
-            <input style="width: 40%;" name="Bare Nuclei" type="text" placeholder="Bare Nuclei">
-            <input style="width: 40%;" name="Bland Chromatin" type="text" placeholder="Bland Chromatin">
-            <input style="width: 40%;" name="Normal Nucleoli" type="text" placeholder="Normal Nucleoli">
-            <input style="width: 40%;" name="Mitoses" type="text" placeholder="Mitoses">
-            <input type="submit">
-        </form>
+    <form action="/results" style="margin: auto; padding-left: 20%; padding-right: 40px;">
+        <input style="width: 40%;" name="Clump Thickness" type="text" placeholder="Clump Thickness">
+        <input style="width: 40%;" name="Uniformity of Cell Size" type="text" placeholder="Uniformity of Cell Size">
+        <input style="width: 40%;" name="Uniformity of Cell Shape" type="text" placeholder="Uniformity of Cell Shape">
+        <input style="width: 40%;" name="Marginal Adhesion" type="text" placeholder="Marginal Adhesion">
+        <input style="width: 40%;" name="Single Epithelial Cell Size" type="text"
+            placeholder="Single Epithelial Cell Size">
+        <input style="width: 40%;" name="Bare Nuclei" type="text" placeholder="Bare Nuclei">
+        <input style="width: 40%;" name="Bland Chromatin" type="text" placeholder="Bland Chromatin">
+        <input style="width: 40%;" name="Normal Nucleoli" type="text" placeholder="Normal Nucleoli">
+        <input style="width: 40%;" name="Mitoses" type="text" placeholder="Mitoses">
+        <input type="submit">
+    </form>
     </div>
 </body>
+
 </html>

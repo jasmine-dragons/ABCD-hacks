@@ -1,36 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" style="background-color: #dab7d1">
-  <head>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.css') }}"/>
-    <meta charset="utf-8">
-    <title>ABCD</title>
-  </head>
 
-  <body>
-    <header>
-      
-      <div class="container">
-        
-        <h1 class="logo" style="margin-bottom: 40px;"> <img src="../static/ABCDlogoblackcomputer.png" style=" z-index: -1000; width: 300px; margin-bottom: -90px " /> A Breast Cancer Detector </h1>
-        <br style="padding-bottom:50px;">
-    
-        
-        <strong><nav style="z-index: 10;">
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.css') }}" />
+  <meta charset="utf-8">
+  <title>ABCD</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo" style="margin-bottom: 40px;"> <img src="../static/ABCDlogoblackcomputer.png"
+          style=" z-index: -1000; width: 300px; margin-bottom: -90px " /> A Breast Cancer Detector </h1>
+      <br style="padding-bottom:50px;">
+      <strong>
+        <nav style="z-index: 10;">
           <ul class="menu">
             <li><a href="/">Home</a></li>
             <li><a href="/inputs">Detect</a></li>
             <li><a href="/lookup">Look Up</a></li>
           </ul>
-        </nav></strong>
-      </div>
-    </header>
-    <div class="container">
-      <br><br>
-      <h5>Breast cancer is a silent killer, affecting 1 in 8 women around the world.</h5>
-
-      <h5>Here at ABCD, we are committed to improving the detection and treatment of breast cancer, providing everyone with a chance to tackle cancer before it tackles them. Using state of the art Machine Learning, we have developed a software for both doctors and patients to detect breast cancer based on easily-recorded symptoms and characteristics. With our web-based software, millions can contribute data at a time, improving detection confidence exponentially!
-      </h5>
-
+        </nav>
+      </strong>
     </div>
-  </body>
+  </header>
+  <div class="container">
+    <br><br>
+    <h5>Breast cancer is a silent killer, affecting 1 in 8 women around the world.</h5>
+    <h5>
+      Here at ABCD, we are committed to improving the detection and treatment of breast cancer, providing everyone with
+      a chance to tackle cancer before it tackles them. Using state of the art Machine Learning, we have developed a
+      software for both doctors and patients to detect breast cancer based on easily-recorded symptoms and
+      characteristics. With our web-based software, millions can contribute data at a time, improving detection
+      confidence exponentially!
+    </h5>
+
+  </div>
+</body>
+
 </html>

@@ -1,54 +1,60 @@
 <!DOCTYPE html>
 <html lang="en" style="background-color: #dab7d1;">
+
 <head>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.css') }}"/>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.css') }}" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-    <header>
-        <div class="container">
-          <h1 class="logo" style="margin-bottom: 40px;"> <img src="../static/ABCDlogoblackcomputer.png" style=" z-index: -1000; width: 300px; margin-bottom: -90px " /> A Breast Cancer Detector </h1>
-          <br style="padding-bottom:50px;">
-          <strong><nav>
-            <ul class="menu">
-              <li><a href="/">Home</a></li>
-              <li><a href="/inputs">Detect</a></li>
-              <li><a href="/lookup">Look Up</a></li>
-            </ul>
-          </nav></strong>
-        </div>
-    </header>
-    <div style="text-align:center;">
-      <div style="margin: auto;">
-        <h6>Patient: {{iden}}</h6>
-        <br>
-        <br>
-        <h6>Clump Thickness: {{ct}}</h6>
-        <br>
-        <h6>Uniformity of Cell Size: {{ucsi}}</h6>
-        <br>
-        <h6>Uniformity of Cell Shape: {{ucsh}}</h6>
-        <br>
-        <h6>Marginal Adhesion: {{ma}}</h6>
-        <br>
-        <h6>Single Epithelial Cell Size: {{secs}}</h6>
-        <br>
-        <h6>Bare Nuclei: {{bn}}</h6>
-        <br>
-        <h6>Bland Chromatin: {{bc}}</h6>
-        <br>
-        <h6>Normal Nucleoli: {{nn}}</h6>
-        <br>
-        <h6>Mitoses: {{m}}</h6>
-        <br>
-        <h6>Prediction: {{p}}</h6>
-        <br>
-        <h6>Confidence: {{a}}</h6>
-      </div>
-      
+  <header>
+    <div class="container">
+      <h1 class="logo" style="margin-bottom: 40px;"> <img src="../static/ABCDlogoblackcomputer.png"
+          style=" z-index: -1000; width: 300px; margin-bottom: -90px " /> A Breast Cancer Detector </h1>
+      <br style="padding-bottom:50px;">
+      <strong>
+        <nav>
+          <ul class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/inputs">Detect</a></li>
+            <li><a href="/lookup">Look Up</a></li>
+          </ul>
+        </nav>
+      </strong>
     </div>
-    
+  </header>
+  <div style="text-align:center;">
+    <div style="margin: auto;">
+      <h6>Patient: {{iden}}</h6>
+      <br>
+      <br>
+      <h6>Clump Thickness: {{ct}}</h6>
+      <br>
+      <h6>Uniformity of Cell Size: {{ucsi}}</h6>
+      <br>
+      <h6>Uniformity of Cell Shape: {{ucsh}}</h6>
+      <br>
+      <h6>Marginal Adhesion: {{ma}}</h6>
+      <br>
+      <h6>Single Epithelial Cell Size: {{secs}}</h6>
+      <br>
+      <h6>Bare Nuclei: {{bn}}</h6>
+      <br>
+      <h6>Bland Chromatin: {{bc}}</h6>
+      <br>
+      <h6>Normal Nucleoli: {{nn}}</h6>
+      <br>
+      <h6>Mitoses: {{m}}</h6>
+      <br>
+      <h6>Prediction: {{p}}</h6>
+      <br>
+      <h6>Confidence: {{a}}</h6>
+    </div>
+
+  </div>
+
 </body>
+
 </html>

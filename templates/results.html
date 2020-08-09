@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" style="background-color: #dab7d1;">
-  <head>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.css') }}"/>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  </head>
-  <body style="text-align: center;">
-    <header>
-      <div class="container">
-        <h1 class="logo" style="margin-bottom: 40px;"> <img src="../static/ABCDlogoblackcomputer.png" style=" z-index: -1000; width: 300px; margin-bottom: -90px " /> A Breast Cancer Detector </h1>
-        <br style="padding-bottom:50px;">
-        <strong><nav>
+
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.css') }}" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body style="text-align: center;">
+  <header>
+    <div class="container">
+      <h1 class="logo" style="margin-bottom: 40px;"> <img src="../static/ABCDlogoblackcomputer.png"
+          style=" z-index: -1000; width: 300px; margin-bottom: -90px " /> A Breast Cancer Detector </h1>
+      <br style="padding-bottom:50px;">
+      <strong>
+        <nav>
           <ul class="menu">
             <li><a href="/">Home</a></li>
             <li><a href="/inputs">Detect</a></li>
             <li><a href="/lookup">Look Up</a></li>
           </ul>
-        </nav></strong>
-
-        <strong><nav>
+        </nav>
+      </strong>
+      <strong>
+        <nav>
           <ul class="menu">
             <div style="text-align: center; font-size: 30px;"> Results </div>
           </ul>
-        </nav></strong>
-      </div>
-    </header>
-    <br><br><br>
-    <h5>Prediction: {{ prediction }} </h5>
-    <h5>Confidence: {{ accuracy }}%</h5><br><br>
-    <h6>Your inputted values: {{ values }}</h6>
-  </body>
+        </nav>
+      </strong>
+    </div>
+  </header>
+  <br><br><br>
+  <h5>Prediction: {{ prediction }}</h5>
+  <h5>Confidence: {{ accuracy }}%</h5><br><br>
+  <h6>Your inputted values: {{ values }}</h6>
+</body>
+
 </html>
