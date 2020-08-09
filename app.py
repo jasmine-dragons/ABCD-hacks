@@ -15,6 +15,12 @@ def inputs():
 def lookup():
     return render_template("lookup.html")
 
+
+'''
+Receives data from inputs page
+Runs the training loop and then predicts what cancer the inputs are correlated to
+Returns the render of the result page and makes the prediction and confidence accessible to the html page
+'''
 @app.route('/results')
 def getValues():
     import numpy as np
@@ -33,6 +39,7 @@ def getValues():
     BlandChromatin = request.args.get('Bland Chromatin')
     NormalNucleoli = request.args.get('Normal Nucleoli')
     Mitoses = request.args.get('Mitoses')
+    
     values = [
         ClumpThickness, 
         UniformityofCellSize, 
@@ -42,7 +49,8 @@ def getValues():
         BareNuclei, 
         BlandChromatin, 
         NormalNucleoli, 
-        Mitoses]
+        Mitoses
+    ]
 
     def classify(data):
         accuracies = []
@@ -75,8 +83,8 @@ def getValues():
         my_col = my_db['data']
         my_col.insert_one(inputs)
 
-    ## This dict need to be added to the database
-    categories = ["Clump Thickness",
+    categories = [
+        "Clump Thickness",
         "Uniformity of Cell Size",
         "Uniformity of Cell Shape",
         "Marginal Adhesion",
@@ -85,7 +93,8 @@ def getValues():
         "Bland Chromatin",
         "Normal Nucleoli",
         "Mitoses",
-        ]
+    ]
+    
     inputs = {}
 
     x = values
@@ -108,7 +117,11 @@ def getValues():
 
     return render_template("results.html", values = values, prediction = borm(pred.item()), accuracy = f'{avg_acc*100:0.4f}')
 
-
+'''
+Receives ID from lookup page
+Runs the parser to search from the id in the mongodb
+Returns the render of lookupresults.hmtl with all the attributes of the patient accessible to lookupresults.html
+'''
 @app.route('/lookupresults')
 def lookupresults():
     import pymongo
