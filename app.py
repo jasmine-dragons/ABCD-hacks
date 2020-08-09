@@ -97,7 +97,7 @@ def getValues():
 
     add_to_db(inputs)
 
-    return render_template("results.html", values = values, prediction = borm(pred.item()), accuracy = avg_acc*100)
+    return render_template("results.html", values = values, prediction = borm(pred.item()), accuracy = f'{avg_acc*100:0.4f}')
 
 
 @app.route('/lookupresults')
