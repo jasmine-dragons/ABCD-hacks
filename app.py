@@ -135,6 +135,8 @@ def lookupresults():
     bc = patient["Bland Chromatin"]
     nn = patient["Normal Nucleoli"]
     m = patient["Mitoses"]
+    p = patient["Prediction"]
+    a = patient["Accuracy"]
 
 
-    return render_template("lookupresults.html", iden = iden, ct = ct, ucsi = ucsi, ucsh = ucsh, ma = ma, secs = secs, bn = bn, bc = bc, nn = nn, m = m)
+    return render_template("lookupresults.html", iden = iden, ct = ct, ucsi = ucsi, ucsh = ucsh, ma = ma, secs = secs, bn = bn, bc = bc, nn = nn, m = m, p=p, a=a)
