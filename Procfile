@@ -1,3 +1,3 @@
-web: gunicorn gettingstarted.wsgi --log-file -
+web: gunicorn app:app --log-file=-
 heroku ps:scale web=1
 worker: python app.py
