@@ -54,7 +54,7 @@ def getValues():
 
     def classify(data):
         accuracies = []
-        for i in range(100):
+        for _ in range(100):
             dframe = pd.read_csv('bcdata.csv')
             dframe.replace('?', -99999, inplace=True)
             dframe.drop(['id'], 1, inplace=True)
