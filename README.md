@@ -7,10 +7,10 @@ About 1 in 8 U.S. women (about 12%) will develop invasive breast cancer over the
 ## Setup
 Your machine will need numpy, scikit-learn, pandas, flask, pymongo, pymonog[srv], dns, json, and bson to run this code. To get any of these libraries, you can just `pip install [insert library here]` in a terminal window. To run the code, first pull the github to your computer and then navigate to the folder where app.py is. Then open terminal and run the command `flask run`. this will direct you to a localhost website where you can interect with the product.
 
-###To use the detection feature:
+### To use the detection feature:
 Navigate to the "Detect" tab using the navigation bar on the website. Then insert values in the range (1-10) into each of the input fields. Click submit and you should see the prediction for the data you inputted. This prediction, as well as the data you input, are saved to the MongoDB database.
 
-###To use the lookup feature:
+### To use the lookup feature:
 Navigate to the "Lookup" tab using the navigation bar on the website. A doctor who had access to the database would be able to freely put in any of his patient's IDs. For demonstation purposes, use one of the following IDs: 5f2f13e8218e81e41faf62d2, 5f2f1e3d218e81e41faf62d4, 5f2f3a64755cd3292de46ebd. Click submit and you should see that the data for the patient as well as their prediction and confidence level are visible.
 
 ## How it works
