@@ -33,7 +33,7 @@ We also utilized a MongoDB database for doctors to look up and store their patie
 ![detect](https://i.imgur.com/cQS2ZhK.png)
 
 ### Results:
-![detectresults](https://i.imgur.com/OGy4ey9.png)
+![detectresults](https://i.imgur.com/f0RaOZJ.png)
 
 ### Patient Lookup:
 ![lookup](https://i.imgur.com/3Uzo1eL.png)
