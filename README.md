@@ -65,6 +65,7 @@ First, we would like to increase the size of our dataset. Bringing access to a g
 - MongoDB / Pymongo
 - HTML/CSS
 - DNS
+- Heroku
 
 ## [Youtube Video](https://www.youtube.com/watch?v=m9t6jYTXXc8)
 
