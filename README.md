@@ -4,7 +4,7 @@
 
 About 1 in 8 U.S. women (about 12%) will develop invasive breast cancer over the course of her lifetime. To ensure that everyone receives their deserved treatment, early detection is vital. Using machine learning, we have developed a program that detects whether a tumor is malignant or benign (given a certain set of characteristics). Both doctors and patients can use this application to improve their chances of detecting breast cancer.
 
-*Note: to view the dataset that we used, click [here](https://archive.ics.uci.edu/ml/datasets.php?format=&task=&att=&area=&numAtt=&numIns=&type=&sort=nameUp&view=table).*
+*Note: to view the dataset that we used, click [here](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Original%29).*
 
 *Note: We used the Materialize.css file to style our pages. To obtain the css file, click [here](https://materializecss.com/).*
 
@@ -61,6 +61,10 @@ https://www.youtube.com/watch?v=m9t6jYTXXc8
 
 
 ## Resources
+
+   CSS: https://materializecss.com/
+
+   Dataset: https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Original%29
 
    Citation Request:
    
