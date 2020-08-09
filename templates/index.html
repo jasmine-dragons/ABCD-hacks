@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="/templates/assets/stylesheet.css"> </a>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet.css') }}"/>
     <meta charset="utf-8">
     <title>Breastalyzer</title>
-
-
-    <header class="header">
-      <h1 class="logo"><a href="index.html">ABCD</a></h1>
-      <ul class="main-nav">
-          <li><a href="inputs.html">Detect</a></li>
-          <li><a href="lookup.html">Lookup</a></li>
-      </ul>
-    </header>
   </head>
 
   <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">ABCD - A Breast Cancer Detector</h1>
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
   </body>
 </html>
