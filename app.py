@@ -7,6 +7,10 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route('/inputs')
+def inputs():
+    return render_template("inputs.html")
+
 @app.route('/results')
 def getValues():
 
