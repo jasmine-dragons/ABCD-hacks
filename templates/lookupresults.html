@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/materialize.css') }}"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <form action= "/lookup">
-        <input name="patientID" type="text">
-        <input type ="submit">
-    </form>
+    <header>
+        <div class="container">
+          <h1 class="logo">ABCD - A Breast Cancer Detector</h1>
+          <strong><nav>
+            <ul class="menu">
+              <li><a href="/">Home</a></li>
+              <li><a href="/inputs">Detect</a></li>
+              <li><a href="/lookup">Look Up</a></li>
+            </ul>
+          </nav></strong>
+        </div>
+    </header>
+    <h1> Patient: {{ patient }}  </h1>
 </body>
 </html>

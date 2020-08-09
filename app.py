@@ -11,17 +11,18 @@ def index():
 def inputs():
     return render_template("inputs.html")
 
+@app.route('/lookup')
+def lookup():
+    return render_template("lookup.html")
+
 @app.route('/results')
 def getValues():
-
-
     import numpy as np
     import pandas as pd
     from sklearn import neighbors, preprocessing
     from sklearn.model_selection import train_test_split
     import pymongo
     import dns
-
 
     ClumpThickness = request.args.get('Clump Thickness')
     UniformityofCellSize = request.args.get('Uniformity of Cell Size')
@@ -99,8 +100,8 @@ def getValues():
     return render_template("results.html", values = values, prediction = borm(pred.item()), accuracy = avg_acc*100)
 
 
-@app.route('/lookup')
-def lookup():
+@app.route('/lookupresults')
+def lookupresults():
     import pymongo
     import json
     from bson.objectid import ObjectId
@@ -115,4 +116,4 @@ def lookup():
         return(patient)
 
 
-    return render_template("lookup.html", patient = get_from_db(patientID))
+    return render_template("lookupresults.html", patient = get_from_db(patientID))
