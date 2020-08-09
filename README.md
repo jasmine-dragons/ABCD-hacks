@@ -24,6 +24,8 @@ Using machine learning, we have developed a program that detects whether a tumor
 
 We also utilized a MongoDB database for doctors to look up and store their patients' information securely allowing them to make informed decisions about their healthcare. Because new user inputs and results are continuously added to this database, the pool of resources and references provided for both doctors and patients alike will grow as more individuals use this application.
 
+## The Site
+
 ### Homepage:
 ![homepage](https://i.imgur.com/o1ytDvz.png)
 
@@ -41,6 +43,16 @@ We also utilized a MongoDB database for doctors to look up and store their patie
 
 ## Future Improvements
 First, we would like to increase the size of our dataset. Bringing access to a greater number of hospitals would give us increased amounts of data will give us more accurate results and would let us be much more confident in the diagnosis. Next, we would also want to increase the number of features in the dataset, giving us more variables to look at and input into the system. This would help take into account many of the other factors involved in the chances of breast cancer in people. 
+
+## What We Used
+- Python
+- Flask
+- Numpy
+- Pandas
+- Scikit-Learn
+- MongoDB / Pymongo
+- HTML/CSS
+
 
 ## Resources
 
