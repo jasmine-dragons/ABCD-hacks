@@ -16,6 +16,7 @@ def lookup():
     return render_template("lookup.html")
 
 
+
 '''
 Receives data from inputs page
 Runs the training loop and then predicts what cancer the inputs are correlated to

@@ -67,3 +67,4 @@ print(f'| Prediction: {borm(pred.item())} \t|')
 print(f'| Accuracy of dataset: {avg_acc*100:.3f}% \t|')
 
 add_to_db(inputs)
+

@@ -9,3 +9,5 @@ my_col = my_db['data']
 patient = my_col.find_one({'_id': ObjectId('5f2f1e3d218e81e41faf62d4')})
 entries = list(patient)
 print(patient)
+
+
