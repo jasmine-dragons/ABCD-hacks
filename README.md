@@ -1,9 +1,7 @@
-#ABCD - A Breast Cancer Detector
+# ABCD - A Breast Cancer Detector
 
 ### Click on the image to view the website
 <a href="https://abcd-xdhacks.herokuapp.com/"><img src="https://i.imgur.com/0MBSEU5.png?1" title="source: imgur.com" style="target: _blank" /></a>
-
-# Breast Cancer Detector
 
 About 1 in 8 U.S. women (about 12%) will develop invasive breast cancer over the course of her lifetime. To ensure that everyone receives their deserved treatment, early detection is vital. Using machine learning, we have developed a program that detects whether a tumor is malignant or benign (given a certain set of characteristics). Both doctors and patients can use this application to improve their chances of detecting breast cancer.
 
